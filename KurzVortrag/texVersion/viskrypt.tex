@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amsthm,amsxtra,amssymb}
+\usepackage{rotating}
+\usepackage{moreverb}
+\usepackage{epsfig}
+
+\newtheorem{frage}{Frage}
+\newtheorem{aufg}{Aufgabe}
+
+
+\begin{document}
+
+   \pagestyle{empty}
+   \parindent0cm
+    
+
+   \begin{center}
+     {\Large \bf Visuelle Kryptografie} \\
+    
+
+  \end{center}
+   \vspace{0.5cm}
+   \normalsize
+   \parindent0cm
+
+   
+\underline{Was ist Kryptographie?}\\
+\\
+Eine Nachricht wird so verschl\"usselt, dass sie nur mit dem richtigen Schl\"ussel erkannt werden kann.
+So kann zum Beispiel ein Sender eine geheime Nachricht sicher zu einem Empf\"anger senden, ohne dass ein
+m\"oglicher Angreifer sie unterwegs erkennen kann.\\
+
+\vspace{2.5cm}
+Bei visueller Kryptografie wird ein Schwarz-Weiss-Bild in mehrere Teilbilder codiert, so dass jedes 
+Teilbild wie ein zuf\"alliges Punktmuster wirkt. Legt man die Teilbilder dann \"ubereinander, so erkennt 
+man das codierte Bild.\\
+
+\vspace{0.5cm}
+\underline{Verfahren:}\\
+\\
+Jeder Bildpunkt wird in 4 Subpixel zerlegt. Bei 2 Teilbildern geht man folgendermassen vor: Jeder 
+Bildpunkt wird auf jedem Teilbild mit gleicher Wahrscheinlichkeit durch eine der folgenden Subpixel-Kombinationen 
+dargestellt:\\
+
+\vspace{3.5cm}
+
+F\"ur einen weissen Punkt w\"ahlen wir zwei gleiche Kombinationen:
+
+\vspace{3.5cm}
+
+F\"ur einen schwarzen Punkt w\"ahlen wir zwei verschiedene Kombinationen:
+
+\vspace{3.5cm}
+
+Ein Teilbild zeigt uns eine zuf\"allige Verteilung der beiden Subpixel-Kombinationen und liefert daher einem 
+m\"oglichen Angreifer keine Information \"uber das codierte Bild. Der Schl\"ussel ist genauso gross wie die verschl\"usselte
+Nachricht.\\
+
+\begin{frage}
+Ist das Verfahren sicher?
+\end{frage}
+
+\begin{frage}
+Wann ist das Verfahren sicher?
+\end{frage}
+
+\begin{frage}
+Wann ist das Verfahren nicht sicher?
+\end{frage}
+
+\begin{frage}
+Wie kann das Verfahren sicherer gemacht werden, wenn das codierte Bild auf dem Display eines Bankautomaten ist und in unserer
+Bankkarte eine Schl\"usselfolie?
+\end{frage}
+
+Wird mehr als ein Bild mit derselben Folie verschl\"usselt, so kann man den Inhalt der Bilder erkennen, sobald man 
+zwei der Bilder und den Schl\"ussel kennt.
+
+\begin{frage}
+Wie? Warum?
+\end{frage}
+
+Zum Beispiel wird ein Pixel, der in beiden geheimen Bildern schwarz ist dann weiss:
+
+\vspace{7cm}
+
+\begin{frage}
+Was passiert mit einem Pixel, der in beiden Bildern weiss ist?
+\end{frage}
+
+\begin{frage}
+Was passiert mit einem Pixel, der in einem Bild weiss und im andern schwarz ist?
+\end{frage}
+
+Richtig spannend wird visuelle Kryptographie erst, wenn man das geheime Bild auf mehr 
+als zwei Folien verteilt. Das unten stehende Beispiel zeigt eine Variante mit drei Folien.\\
+
+\vspace{7cm}
+
+\begin{aufg}
+Sucht nach weiteren Varianten mit drei Folien!
+\end{aufg}
+    
+   
+
+
+
+\end{document}
+
+   
